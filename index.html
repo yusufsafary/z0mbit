@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=1">
+<link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
 <canvas id="souls" aria-hidden="true"></canvas>
@@ -28,13 +28,18 @@
     <p class="tag">Dead coins rise.</p>
     <p class="sub">A token for every dead token on Elysium. Bring yours to the graveyard, burn it, and walk out holding Z0MBIT, with a 20% revival bonus while the reserve lasts.</p>
     <div class="chips">
-      <span class="chip live"><i></i>LAUNCHING ON MONTRA</span>
+      <span class="chip live"><i></i>LIVE ON MONTRA</span>
       <span class="chip">ELYSIUM CHAIN 99901</span>
       <span class="chip">SUPPLY 1,000,000,000</span>
     </div>
     <div class="cta">
       <a class="btn main" href="#graveyard">Enter the graveyard</a>
       <a class="btn ghost" href="#revive">How revival works</a>
+    </div>
+    <div class="tokenbox">
+      <span class="tb-label">TOKEN CONTRACT · ELYSIUM CHAIN</span>
+      <code class="addr">0xa8881A16e3D10808b7e2cBEee0D2c1030CF27767</code>
+      <a class="btn trade" href="https://montramarkets.xyz/token/0xa8881A16e3D10808b7e2cBEee0D2c1030CF27767" target="_blank" rel="noopener">Trade Z0MBIT on Montra</a>
     </div>
     <div class="stats">
       <div><b data-count="0">0</b><span>tokens buried</span></div>
@@ -91,14 +96,14 @@
     <details><summary>What counts as a dead token?</summary><p>An Elysium token admitted to the graveyard list: trading has stopped or collapsed, and its pool sits idle. Admission is curated by the project and announced here and on X first.</p></details>
     <details><summary>When does Revive open?</summary><p>When the Revive Reserve holds real Z0MBIT bought with creator fees that have actually arrived. Watch the reserve counter on this page. No date is promised against money that has not landed.</p></details>
     <details><summary>What are the fees, exactly?</summary><p>Trading fee is 3% in total: 2.6% creator, 0.4% protocol, 0% LP while the pool is below the LP line. Past the line: 2.1% creator, 0.4% protocol, 0.5% LP. Revive itself charges no fee; the 20% bonus is paid by the reserve, not by you.</p></details>
-    <details><summary>Where does Z0MBIT trade?</summary><p>On Montra, in a Uniswap v4 pool on Elysium, with the full supply of 1,000,000,000 locked in the pool at launch. Token contract is announced on this page and on X at launch. Trust only those two sources.</p></details>
+    <details><summary>Where does Z0MBIT trade?</summary><p>On Montra, in a Uniswap v4 pool on Elysium, with the full supply of 1,000,000,000 locked in the pool at launch. It is live now. Token contract: 0xa8881A16e3D10808b7e2cBEee0D2c1030CF27767. Trust only this page and the official X account.</p></details>
   </section>
 </main>
 
 <footer>
   <img src="img/zombie.png" alt="">
   <p>Z0MBIT · z0mbit.xyz · Elysium chain 99901</p>
-  <p class="dim">Token contract announced at launch. Dead coins rise.</p>
+  <p class="dim">Contract 0xa8881A16e3D10808b7e2cBEee0D2c1030CF27767 · Live on Montra. Dead coins rise.</p>
 </footer>
 
 <script src="app.js?v=1"></script>
