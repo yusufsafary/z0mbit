@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Z0MBIT · Dead coins rise</title>
+<meta name="description" content="Z0MBIT lives on Elysium. Burn dead Elysium tokens, rise with Z0MBIT. Trading fee 3%: creator 2.6%, protocol 0.4%.">
+<link rel="icon" type="image/png" href="img/zombie.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+<canvas id="souls" aria-hidden="true"></canvas>
+
+<header class="top">
+  <a class="brand" href="#top"><img src="img/zombie.png" alt="Z0MBIT face">Z0MBIT</a>
+  <nav>
+    <a href="#fees">Fees</a><a href="#revive">Revive</a><a href="#graveyard">Graveyard</a><a href="#faq">FAQ</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <img class="hero-face" src="img/zombie.png" alt="Pixel zombie face with a bitcoin scar">
+    <h1 class="glitch" data-text="Z0MBIT">Z0MBIT</h1>
+    <p class="tag">Dead coins rise.</p>
+    <p class="sub">A token for every dead token on Elysium. Bring yours to the graveyard, burn it, and walk out holding Z0MBIT, with a 20% revival bonus while the reserve lasts.</p>
+    <div class="chips">
+      <span class="chip live"><i></i>LAUNCHING ON MONTRA</span>
+      <span class="chip">ELYSIUM CHAIN 99901</span>
+      <span class="chip">SUPPLY 1,000,000,000</span>
+    </div>
+    <div class="cta">
+      <a class="btn main" href="#graveyard">Enter the graveyard</a>
+      <a class="btn ghost" href="#revive">How revival works</a>
+    </div>
+    <div class="stats">
+      <div><b data-count="0">0</b><span>tokens buried</span></div>
+      <div><b data-count="0">0</b><span>Z0MBIT revived</span></div>
+      <div><b data-count="0">0</b><span>reserve remaining</span></div>
+    </div>
+  </section>
+
+  <section id="fees" class="fees">
+    <p class="kicker">FEES, IN DAYLIGHT</p>
+    <h2>Every trade pays <em>3%</em>. Here is where it goes.</h2>
+    <div class="fee-big">
+      <div class="fee-card creator">
+        <span class="fee-label">CREATOR</span>
+        <span class="fee-num"><b data-count="2.6" data-dec="1">0</b>%</span>
+        <div class="bar"><i data-w="86.7"></i></div>
+        <p>Paid to the project in HYPE. Creator fees buy Z0MBIT back from the pool and refill the Revive Reserve.</p>
+      </div>
+      <div class="fee-card protocol">
+        <span class="fee-label">PROTOCOL</span>
+        <span class="fee-num"><b data-count="0.4" data-dec="1">0</b>%</span>
+        <div class="bar"><i data-w="13.3"></i></div>
+        <p>Paid to Montra, the launchpad. Nothing else is taken. No hidden cut, no team wallet skimming trades.</p>
+      </div>
+    </div>
+    <p class="fee-note">Total fee <b>3%</b> on every buy and sell. While the pool is young, LP share is 0% and the creator share is the full 2.6%. Past the LP line, creator becomes 2.1% and LP earns 0.5%. Total never changes.</p>
+  </section>
+
+  <section id="revive" class="revive">
+    <p class="kicker">REVIVE</p>
+    <h2>Bring out your dead.</h2>
+    <div class="steps">
+      <article><span>01</span><h3>Bring your dead</h3><p>Pick a dead Elysium token from the graveyard list. If a token trades nowhere and its holders gave up, it belongs here.</p></article>
+      <article><span>02</span><h3>Burn it</h3><p>Send the dead token to the Revive contract. It is burned for good, counted on a public tombstone with your address on it.</p></article>
+      <article><span>03</span><h3>Rise with Z0MBIT</h3><p>Receive Z0MBIT worth the last value of what you burned, plus a 20% revival bonus, paid from the Revive Reserve.</p></article>
+    </div>
+    <p class="fee-note">Revive opens when the reserve wakes. Reserve is funded only by creator fees that have actually arrived, never by promises.</p>
+  </section>
+
+  <section id="graveyard" class="graveyard">
+    <p class="kicker">GRAVEYARD BOARD</p>
+    <h2>Fresh ground. No burials yet.</h2>
+    <div class="plots">
+      <div class="plot"><span>PLOT Nº 001</span><b>VACANT</b><small>first burial gets the corner plot</small></div>
+      <div class="plot"><span>PLOT Nº 002</span><b>VACANT</b><small>reserved for a fallen launch</small></div>
+      <div class="plot"><span>PLOT Nº 003</span><b>VACANT</b><small>digging in progress</small></div>
+    </div>
+    <p class="fee-note">Revive Reserve: <b>0 Z0MBIT</b>. Buried so far: <b>0 tokens</b>. This board updates as graves are filled.</p>
+  </section>
+
+  <section id="faq" class="faq">
+    <p class="kicker">QUESTIONS FROM THE CRYPT</p>
+    <h2>Asked at the gate.</h2>
+    <details><summary>What counts as a dead token?</summary><p>An Elysium token admitted to the graveyard list: trading has stopped or collapsed, and its pool sits idle. Admission is curated by the project and announced here and on X first.</p></details>
+    <details><summary>When does Revive open?</summary><p>When the Revive Reserve holds real Z0MBIT bought with creator fees that have actually arrived. Watch the reserve counter on this page. No date is promised against money that has not landed.</p></details>
+    <details><summary>What are the fees, exactly?</summary><p>Trading fee is 3% in total: 2.6% creator, 0.4% protocol, 0% LP while the pool is below the LP line. Past the line: 2.1% creator, 0.4% protocol, 0.5% LP. Revive itself charges no fee; the 20% bonus is paid by the reserve, not by you.</p></details>
+    <details><summary>Where does Z0MBIT trade?</summary><p>On Montra, in a Uniswap v4 pool on Elysium, with the full supply of 1,000,000,000 locked in the pool at launch. Token contract is announced on this page and on X at launch. Trust only those two sources.</p></details>
+  </section>
+</main>
+
+<footer>
+  <img src="img/zombie.png" alt="">
+  <p>Z0MBIT · z0mbit.xyz · Elysium chain 99901</p>
+  <p class="dim">Token contract announced at launch. Dead coins rise.</p>
+</footer>
+
+<script src="app.js?v=1"></script>
+</body>
+</html>
